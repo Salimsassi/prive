@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Privé Coiffure</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Css/styles.css">
+	<script src="Script/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="Script/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+
+	<header  class="mynvbar" id="nvbar">
+		<div id="logo">
+			<img src="Css/Images/logo.png" height="60px">
+		</div>
+
+		<nav>
+			<ul class="topnav" id="myTopnav">
+				<li><a href="#main-pics">Accueil</a></li>
+				<li><a href="#section2">Services</a></li>
+				<li><a href="#section3">Contact</a></li>
+				<li class="dd"><a href="#">About us</a></li>
+			</ul>
+			<span><a href="javascript:void(0);" style="text-decoration: none; color: white;" class="icon" id="slide" onclick="myFunction()">&#9776;</a></span>
+		</nav>
+		
+	</header>
+	
+	
+<div id="main-pics">
+			<img id="pics" src="" width="100%">
+		</div>
+
+	<section id="section1">
+
+
+		<div class="main-text">
+			<h1>bienvenue chez<br>Privé Coiffure</h1>
+		</div>
+
+
+		<div class="button1">
+				<a href="#reser"><button>Réserver</button></a>
+		</div>
+		
+	</section>
+	
+	
+
+	<section id="section2">
+		
+		<div class="sous-titre">
+			<h2>Nos Services</h2>
+		</div>
+
+		<div id="Services-container">
+
+			<div class="Services-div">
+				<img src="Css/Images/Icons/icon1.png">
+				<h3>Hair cut</h3>
+				<p>aaaaaaaaaaaaaaaaaaaaaaaaa
+				   aaaaaaaaaaaaaaaaaaaaaaaaaaa
+				   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				</p>
+
+			</div>
+
+			<div class="Services-div">
+				<img src="Css/Images/Icons/icon2.png">
+				<h3>Barbier</h3>
+				<p>aaaaaaaaaaaaaaaaaaaaaaaaa
+				   aaaaaaaaaaaaaaaaaaaaaaaaaaa
+				   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				</p>
+
+			</div>
+
+			<div class="Services-div">
+				<img src="Css/Images/Icons/icon3.png">
+				<h3>Soin de visage</h3>
+				<p>aaaaaaaaaaaaaaaaaaaaaaaaa
+				   aaaaaaaaaaaaaaaaaaaaaaaaaaa
+				   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				</p>
+
+			</div>
+			
+		</div>
+
+	</section>
+
+	<section id="section3">
+		<div class="sous-titre2">
+			<h2 class="cont">Contacts</h2>
+		</div>
+<div class="container-fluid">
+	<div class="row contact-container">
+		<div class="col-lg-6">
+			<h3><span class="big-text">Tel :</span> 20202080</h3>
+		</div>
+		<div class="col-lg-6 add">
+			<h3><span class="big-text">Adresse :</span> 14 Mohamed Salah<br>Belhaj 2070 La Marsa</h3>
+		</div>
+
+
+
+
+		<div id="map" style="width:800px;height:400px;background:white"></div>
+		<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuPzXNgNZfVWLP2ZaKgq1u0vB3alUPvT4&callback=initMap">
+    </script>	
+
+
+
+
+
+		</div>
+</div>
+		
+	</section>
+	<footer id="reser">
+		<h2 class="cont">Réservation</h2>
+	<div id="formu">
+		<form id="conatctForm">
+			<p>
+			<label>Name:</label>
+	
+			<input type="text" name="name" id="name">
+			</p>
+			<p>
+				<label>Phone:</label>
+				<input type="text" name="phone" id="phone">
+			</p>
+			<p>
+				<p id="err" class="error matetrach">this date is already taken</p>
+				<label>Day:</label>
+				<input type="date"  name="Day" id="Day">
+			</p>
+			<p>
+				<label>Time:</label>
+				<input type="time"  name="time" id="time">
+			</p>
+			<p class="full">
+				<button type="submit" style="padding: 5px 20px 5px 20px; background-color: #444; color:#fff;border:solid 1px white; border-radius: 2px; text-align: center; margin-bottom: 30px;">ok</button>
+				
+			</p>
+		</form>
+	</div>
+	</footer>
+</body>
+ <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>
